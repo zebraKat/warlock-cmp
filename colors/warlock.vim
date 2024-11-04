@@ -12,19 +12,16 @@ endif
 let colors_name = "warlock"
 
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
-    hi CmpItemKind guifg=#ffffff
-    hi CmpItemAbbr guifg=#585858
-    hi CmpItemAbbrMatch guibg=NONE guifg=#ffffff
-    hi CmpItemAbbrMatchFuzzy guibg=NONE guifg=#ffffff
-    hi CmpItemKindFunction guibg=NONE guifg=#ffffff
-    hi CmpItemKindMethod guibg=NONE guifg=#ffffff
-    hi CmpItemKindVariable guibg=NONE guifg=#ffffff
-    hi CmpItemKindKeyword guibg=NONE guifg=#ffffff
-    hi CmpItemKindConstructor guifg=#ffffff
-    hi CmpItemKindParameter guifg=#ffffff
-    hi CmpItemKindField guifg=#ffffff
-    hi CmpItemKindMethod guifg=#ffffff
-    hi CmpItemAbbrDeprecated guifg=#585858   " Deprecated items (strikethrough)
+    hi CmpItemAbbrDeprecated guifg=#ffffff ctermfg=103 gui=NONE cterm=NONE
+    hi link CmpItemAbbrMatch CocHintSign
+    hi CmpItemAbbrMatchFuzzy guifg=#ffffff ctermfg=74 gui=NONE cterm=NONE
+    hi CmpItemKindVariable guifg=#ffffff ctermfg=158 gui=NONE cterm=NONE
+    hi CmpItemKindInterface guifg=#ffffff ctermfg=134 gui=NONE cterm=NONE
+    hi CmpItemKindText guifg=#ffffff ctermfg=187 gui=NONE cterm=NONE
+    hi CmpItemKindFunction guifg=#ffffff ctermfg=38 gui=NONE cterm=NONE
+    hi CmpItemKindMethod guifg=#ffffff ctermfg=39 gui=NONE cterm=NONE
+    hi CmpItemKindKeyword guifg=#ffffff ctermfg=38 gui=NONE cterm=NONE
+
     hi Normal ctermbg=235 ctermfg=250 cterm=NONE guibg=#262626 guifg=#bcbcbc gui=NONE
     hi NonText ctermbg=NONE ctermfg=240 cterm=NONE guibg=NONE guifg=#585858 gui=NONE
     hi EndOfBuffer ctermbg=NONE ctermfg=240 cterm=NONE guibg=NONE guifg=#585858 gui=NONE
