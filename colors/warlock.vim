@@ -18,7 +18,7 @@ if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi CmpItemAbbrMatchFuzzy guifg=#ffffff
     hi CmpItemKindClass guifg=#ffffff
     hi CmpItemKindType guifg=#ffffff
-    hi CmpItemKind guifg=#ffffff CmpItemKindParameter
+    hi CmpItemKind guifg=#ffffff
     hi CmpItemKindParameter guifg=#ffffff  
     hi CmpItemKindSnippet guifg=#ffffff 
     hi CmpItemAbbrDeprecated guifg=#585858   " Deprecated items (strikethrough)
