@@ -14,6 +14,8 @@ let colors_name = "warlock"
 if ($TERM =~ '256' || &t_Co >= 256) || has("gui_running")
     hi CmpItemKind guifg=#ffffff
     hi CmpItemAbbr guifg=#585858
+    hi CmpItemAbbrMatch guifg=#585858
+    hi CmpItemAbbrMatchFuzzy guifg=#585858
     hi Normal ctermbg=235 ctermfg=250 cterm=NONE guibg=#262626 guifg=#bcbcbc gui=NONE
     hi NonText ctermbg=NONE ctermfg=240 cterm=NONE guibg=NONE guifg=#585858 gui=NONE
     hi EndOfBuffer ctermbg=NONE ctermfg=240 cterm=NONE guibg=NONE guifg=#585858 gui=NONE
